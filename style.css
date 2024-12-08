@@ -1,0 +1,39 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: rgba(2, 89, 133, 0.8);
+}
+
+.page-container {
+    margin: auto;
+}
+
+.buttons {
+    text-align: center;
+}
+
+.button {
+    padding: 5px;
+    width: 164px;
+    background-color: #ffffff;
+    color: rgba(2, 89, 133, 0.8);
+    font-weight: bold;
+    border: 3px solid #000000;
+    cursor: pointer;
+}
+
+#canvas-container {
+    width: 500px;
+    text-align: center;
+}
+
+.p5canvas {
+    margin: auto;
+}

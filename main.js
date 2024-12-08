@@ -18,10 +18,12 @@ let car;
 let tileWidth = 50;
 let stop = false;
 let origin = [4,4];
+let mazeWidth = 10;
 
 function setup() {
-	createCanvas(600, 600);
-	maze = new Maze(tileWidth, 11, wallsOfTheMaze, startTile, endTile);
+	let canvas = createCanvas(tileWidth * mazeWidth, tileWidth * mazeWidth);
+	canvas.parent('canvas-container');
+	maze = new Maze(tileWidth, mazeWidth, wallsOfTheMaze, startTile, endTile);
 	maze.setupWalls();
 	reset();
 }
